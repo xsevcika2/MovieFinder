@@ -1,0 +1,14 @@
+.button {
+  border: none;
+  padding: 8px;
+  margin: 0px 8px 0px 0px;
+  border-radius: 10px;
+  background-color: gainsboro;
+  cursor: pointer;
+}
+
+.activeClassName .button {
+  font-weight: bold;
+  color: aliceblue;
+  background-color: cornflowerblue;
+}

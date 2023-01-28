@@ -19,8 +19,7 @@ REACT_APP_API_KEY="api-key"
 ```
 
 > **Warning**
-> This project does not contain Redux.
-> There are no code comments yet.
-> Still many things to improve.
+>
+> This project does not contain Redux, there are no code comments yet, and there are still many things to improve.
 
 I wish you the best of luck with testing the app! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="20px">

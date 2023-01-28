@@ -1,0 +1,17 @@
+.preview {
+  cursor: pointer;
+  transition: transform 0.2s; /* Animation */
+}
+
+.preview:hover {
+  transform: scale(1.05);
+}
+
+.preview:hover span {
+  color: #403e44;
+  text-shadow: 2px 2px #efe9f9;
+}
+
+.link {
+  text-decoration: none;
+}

@@ -1,0 +1,41 @@
+.key div {
+  font-weight: bold;
+  color: black;
+  text-align: end;
+  padding: 0px;
+  width: 130px;
+}
+
+.detail div {
+  color: black;
+  text-align: start;
+  padding: 0px;
+}
+
+.list div {
+  padding: 1px 5px 1px 5px;
+}
+
+.liked {
+  cursor: pointer;
+  color: cornflowerblue;
+  padding: 0px 20px 0px 20px;
+  transition: transform 0.2s; /* Animation */
+}
+
+.liked:hover {
+  // color: #bbb5c6;
+  transform: scale(1.2);
+}
+
+.notLiked {
+  cursor: pointer;
+  color: #bbb5c6;
+  padding: 0px 20px 0px 20px;
+  transition: transform 0.2s; /* Animation */
+}
+
+.notLiked:hover {
+  color: cornflowerblue;
+  transform: scale(1.2);
+}
