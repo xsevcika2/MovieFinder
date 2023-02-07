@@ -2,7 +2,7 @@
 
 ![ts](https://flat.badgen.net/badge/Built%20With/TypeScript/blue) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-This is a React project using TypeScript and SASS for searching through a movie database on IMDB via the omdbapi API.
+This is a React project using TypeScript and SCSS for searching through a movie database on IMDB via the omdbapi API.
 
 ## For the testing
 
@@ -14,8 +14,20 @@ mv .env.example .env
 
 then you need to replace your API key for "api-key" in the .env file:
 
-```
+```console
 REACT_APP_API_KEY="api-key"
+```
+
+next you can run:
+
+```console
+npm install
+```
+
+and after installation; run the APP with:
+
+```console
+npm start
 ```
 
 > **Warning**
