@@ -52,7 +52,7 @@ export interface IDetail {
   imdbVotes: string;
   imdbID: string;
   Type: string;
-  Dvd: string;
+  DVD: string;
   BoxOffice: string;
   Production: string;
   Website: string;

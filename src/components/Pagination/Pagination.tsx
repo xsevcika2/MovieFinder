@@ -1,4 +1,5 @@
 import Grid from "../Grid/Grid";
+import styles from "./Pagination.module.scss";
 
 interface IPaginationProps {
   currPageNumber: number;
@@ -17,7 +18,13 @@ const Pagination = ({
     if (i >= currPageNumber - 2 && i <= currPageNumber + 2) {
       paginationButtons.push(
         <Grid key={i} item>
-          <button key={i} onClick={() => updatePageNumber(i)}>
+          <button
+            className={
+              currPageNumber === i ? styles.activeButton : styles.button
+            }
+            key={i}
+            onClick={() => updatePageNumber(i)}
+          >
             {i}
           </button>
         </Grid>
@@ -29,12 +36,18 @@ const Pagination = ({
     <>
       <Grid container justifyContent={"center"}>
         <Grid item>
-          <button onClick={() => updatePageNumber(currPageNumber - 1)}>
+          <button
+            className={styles.button}
+            onClick={() => updatePageNumber(currPageNumber - 1)}
+          >
             &lt;
           </button>
         </Grid>
         <Grid key={1} item>
           <button
+            className={
+              currPageNumber === 1 ? styles.activeButton : styles.button
+            }
             key={1}
             onClick={() => {
               updatePageNumber(1);
@@ -55,6 +68,11 @@ const Pagination = ({
         {maxPageNumber > 1 ? (
           <Grid key={maxPageNumber} item>
             <button
+              className={
+                currPageNumber === maxPageNumber
+                  ? styles.activeButton
+                  : styles.button
+              }
               key={maxPageNumber}
               onClick={() => updatePageNumber(maxPageNumber)}
             >
@@ -64,6 +82,7 @@ const Pagination = ({
         ) : null}
         <Grid item>
           <button
+            className={styles.button}
             onClick={() => {
               updatePageNumber(currPageNumber + 1);
             }}

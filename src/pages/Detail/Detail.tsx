@@ -150,7 +150,7 @@ const Detail = () => {
                     <div>DVD:</div>
                   </Grid>
                   <Grid item className={styles.detail}>
-                    <div>{movieDetails.Dvd}</div>
+                    <div>{movieDetails.DVD}</div>
                   </Grid>
                 </Grid>
                 <Grid container textAlign={"start"}>
